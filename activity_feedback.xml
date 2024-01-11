@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_baseline_star_rate_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Feedback form"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/loutuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/dname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_white_background"
+                    android:gravity="start"
+                    android:hint=" User Name"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/dmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/round_white_background"
+                    android:gravity="start"
+                    android:hint="Product Name"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:textColor="@color/font"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/dsympt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/round_white_background"
+                    android:gravity="start|bottom"
+                    android:hint="Enter feedback"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:textColor="@color/font" />
+
+                <EditText
+                    android:id="@+id/dsympt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:autofillHints=""
+                    android:hint="Symptom 2"
+                    android:inputType="textEmailAddress"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/dsympt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:autofillHints=""
+                    android:hint="Symptom 3"
+                    android:inputType="textEmailAddress"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/dsympt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:autofillHints=""
+                    android:hint="Symptom 4"
+                    android:inputType="textEmailAddress"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/dsympt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:autofillHints=""
+                    android:hint="Symptom 5"
+                    android:inputType="textEmailAddress"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Each word separate with , "
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/medicine_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_transparent_background_selector"
+                    android:entries="@array/items_class" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_transparent_background_selector"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Submit Feedback"
+                android:textColor="#131313"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
